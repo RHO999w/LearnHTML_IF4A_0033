@@ -6,7 +6,7 @@
 
     body {
         font-family: "Segoe UI"; 
-        background-color: #0d1117;
+        background-color: #324157;
         color: #c9d1d9;          
         line-height: 1.6;        
     }
@@ -16,7 +16,7 @@
     }
 
     header{
-        background-color: rgba(26, 28, 32, 0.9);
+        background-color: rgba(6, 45, 122, 0.9);
         padding: 1rem 4.5;
         display: flex;
         align-items: center;
@@ -48,7 +48,7 @@ nav a::hover{
 }
 
 #about {
-    background-color: #0d1117;
+    background-color: #324157;
     padding: 6rem 4.5rem;
     display: flex;
     align-items: center;
@@ -82,3 +82,132 @@ nav a::hover{
 .hero-kiri p {
     font-size: 1.2rem;
 }
+
+#skills {
+    padding: 4rem 4.5rem;
+    text-align: center; 
+}
+
+.skills-list {
+    display: flex;          
+    justify-content: center; 
+    gap: 30px;              
+    list-style: none;       
+    padding: 0;
+}
+
+.skills-container img {
+    width: 80px;           
+    height: 80px;           
+    object-fit: contain;    
+    transition: transform 0.3s ease; 
+}
+
+
+
+grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #161b22;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+}
+
+.card .date {
+    font-size: 0.8rem;
+    color: #58a6ff;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.card h4 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    text-align: center;
+    background: #324157;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #238636;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #2ea043;
+}
+
+/* Forms */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #324157;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: #324157;
+    border: 1px solid #30363d;
+    color: white;
+    border-radius: 6px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #3a7ce0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
